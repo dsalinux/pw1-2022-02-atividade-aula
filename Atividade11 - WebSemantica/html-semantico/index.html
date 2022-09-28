@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html não semântico</title>
+</head>
+
+<body>
+    <style>
+        .cabecalho {
+            height: 60px;
+            border: 1px solid red
+        }
+
+        .lateral {
+            float: left;
+            border: 3px solid blue;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        .conteudo {
+            float: left;
+            border: 3px solid green;
+            width: calc(100% - 200px);
+            box-sizing: border-box;
+        }
+
+        .conteudo::after {
+            content: '';
+            clear: both;
+        }
+
+        .clearFix {
+            clear: both;
+        }
+
+        .rodape {
+            height: 60px;
+            border: 1px solid red
+        }
+    </style>
+    <header class="cabecalho"></header>
+    <aside class="lateral">
+        <nav>
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="conteudo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nesciunt quas incidunt tenetur officiis totam
+            maxime aliquam explicabo in culpa. Ipsam cupiditate officiis quo corrupti itaque atque delectus modi et.</p>
+        <p>Odit consequuntur harum id nemo. Eos, magnam? Velit deleniti dolor voluptatibus, vero omnis amet corrupti
+            adipisci eaque, assumenda, dicta magnam officia placeat error! Quo inventore illo iste, necessitatibus
+            sapiente totam.</p>
+        <p>Fuga, laudantium delectus adipisci ipsa, deleniti ea explicabo fugiat consequatur perferendis cum saepe
+            aspernatur impedit molestias mollitia consequuntur nihil atque sit corrupti repellendus in dicta, enim quas.
+            Nihil, qui quas.</p>
+    </main>
+    <div class="clearFix"></div>
+    <footer class="rodape"></footer>
+</body>
+
+</html>

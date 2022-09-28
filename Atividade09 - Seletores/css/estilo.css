@@ -1,0 +1,32 @@
+
+label + input {
+    border: 2px solid green;
+}
+
+input[value="submit"] {
+    outline: 2px solid red;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label::before {
+    content: 'O';
+    border: 1px solid black;
+    margin-right: 10px;
+}
+input[type="checkbox"]:checked + label::before {
+    content: 'X';
+    border: 1px solid blue;
+    margin-right: 10px;
+
+}
+
+a + input[type="checkbox"]:checked + form {
+    display: none;
+}
+
+form {
+    background-color: gray;
+    margin: 0 auto;
+    width: 600px;
+}
