@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.calc-tabela {
+    width: 200px;
+    border-collapse: collapse;
+}

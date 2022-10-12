@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calc-grid {
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.calc-grid a {
+    border: 1px solid blue;
+}
+.painel { 
+    grid-column: 1/5;
+    border: 1px solid blue;
+}
+
+.botao-igual {
+    grid-row: 5/7;
+    grid-column: 4/5;
+}
+.botao-zero {
+    grid-column: 1/3;
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --background: linear-gradient(0deg, rgb(209, 209, 209), rgb(255, 255, 255));
+    --color: #333;
+    --background-hover: #4caf50;
+}
+body.dark {
+    --background: linear-gradient(0deg, #333, #000);
+    --color: #fff;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(0deg, #4caf50 50%,white 50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.calc-grid {
+    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    background: var(--background);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px #333;
+}
+.painel { 
+    grid-column: 1/5;
+    min-height: 50px;
+    color: var(--color);
+    border-bottom: 1px solid #4caf50;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.botao {
+    text-decoration: none;
+    text-align: center;
+    /* background: white; */
+    color: var(--color);
+    font-size: 0.8em;
+    padding: 0.5em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao:hover {
+    text-shadow: 0 0 4px  var(--background-hover), 0 0 10px  var(--background-hover), 0 0 15px  var(--background-hover);
+}
+.botao-igual {
+    grid-row: 5/7;
+    grid-column: 4/5;
+}
+.botao-zero {
+    grid-column: 1/3;
+}
