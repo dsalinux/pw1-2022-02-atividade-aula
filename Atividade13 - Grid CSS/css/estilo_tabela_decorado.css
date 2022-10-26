@@ -24,7 +24,7 @@ body {
 }
 .calc-tabela {
     border-collapse: collapse;
-    width: 150px;
+    width: 250px;
     
 }
 .painel { 
@@ -41,7 +41,7 @@ body {
     text-align: center;
     /* background: white; */
     color: var(--color);
-    font-size: 0.8em;
+    font-size: 1.8em;
     padding: 0.5em 0em;
     display: flex;
     align-items: center;

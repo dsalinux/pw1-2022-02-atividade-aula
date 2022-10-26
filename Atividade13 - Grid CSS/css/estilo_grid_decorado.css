@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 :root {
     --background: linear-gradient(0deg, rgb(209, 209, 209), rgb(255, 255, 255));
     --color: #333;
@@ -18,7 +19,7 @@ body {
 }
 
 .calc-grid {
-    width: 150px;
+    width: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
@@ -28,6 +29,7 @@ body {
     box-shadow: 1px 1px 15px #333;
 }
 .painel { 
+    font-family: 'Silkscreen', cursive;
     grid-column: 1/5;
     min-height: 50px;
     color: var(--color);
@@ -42,7 +44,7 @@ body {
     text-align: center;
     /* background: white; */
     color: var(--color);
-    font-size: 0.8em;
+    font-size: 1.8em;
     padding: 0.5em 0em;
     display: flex;
     align-items: center;
